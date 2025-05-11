@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+   
+    height: 100%;
+    width: 100%;
+   
+
+
+} 
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+   
+}
+
+.sidebar{
+    width: 280px ;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #bec1bb;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 20px 1px 35px;
+    
+   
+}
+
+.profile{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+   
+}
+
+.profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    line-height: 1.2;
+}
+
+.profile-info p{
+    margin: 0;
+}
+
+.icons{
+    display: flex;
+    gap: 15px;
+    font-size: 1.2rem;
+    color: #828485;
+
+}
+
+.new-chat-btn{
+    background-color: #a491d2;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    width: 65%;
+    margin: 30px auto 44px auto;
+    cursor: pointer;
+    
+}
+
+
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0;
+    
+   
+    
+    
+   
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 30px;
+    margin: 0;
+    border: 1px solid #ebebeb;
+    width: 100%;
+    box-sizing: border-box;
+    
+    
+}
+
+
+.contact img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   
+}
+
+.contact > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact p {
+    margin: 0;
+}
+
+.main-content{
+
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+/* Responsivo para celulares */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-width: unset;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #bec1bb;
+  }
+
+  .main-content {
+    padding: 30px 15px;
+  }
+}
+
+
+.main-content img{
+    width: 250px;
+    margin-bottom: 20px;
+
+}
+
+.main-content h1 {
+    margin-bottom: 10px;
+    font-family: 'Roboto' sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+
+}
+
+.main-content p{
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Roboto' sans-serif;
+   
+    
+ 
+}
+
+hr{
+    
+    border: 1px solid #bec1bb;
+}
